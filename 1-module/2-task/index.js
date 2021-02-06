@@ -12,7 +12,17 @@ function print(text) {
  * @returns {boolean}
  */
 function isValid(name) {
-  // ваш код...
+  //Validate null and blank string
+  if (name) {
+    //Validate white space and length
+    return (hasWhiteSpace(name) || name.length < 4) ? false : true;    
+  } else {
+    return false;
+  }
+}
+
+function hasWhiteSpace(name) {
+  return (name.indexOf(' ') >= 0 ? true : false); 
 }
 
 function sayHello() {
