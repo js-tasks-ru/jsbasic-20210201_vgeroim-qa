@@ -4,7 +4,6 @@ export default function initCarousel(carousel) {
     const carouselInner = carousel.querySelector('.carousel__inner');
     const slides = carouselInner.querySelectorAll('.carousel__slide');
   
-  
     //set default state for the first slide and left button on page load
     slides[0].classList.add('current');
     btnLeft.style.display = 'none';
@@ -43,5 +42,3 @@ export default function initCarousel(carousel) {
       }
     });
   }
-  
-  

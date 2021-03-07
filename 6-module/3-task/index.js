@@ -84,8 +84,6 @@ export default class Carousel {
     return slide;
   }
 
-
-
   renderRightBtn() {
     //create right btn
     const rightBtn = document.createElement('div');
